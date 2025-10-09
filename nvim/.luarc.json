@@ -1,0 +1,3 @@
+{
+	"workspace.library": ["~/.config/nvim", "/etc/xdg/nvim", "~/.local/share/nvim/site", "~/.local/share/nvim/site/pack/core/opt/mason.nvim", "~/.local/share/nvim/site/pack/core/opt/nvim-treesitter", "~/.local/share/nvim/site/pack/core/opt/nvim-lspconfig", "~/.local/share/nvim/site/pack/core/opt/telescope.nvim", "~/.local/share/nvim/site/pack/core/opt/plenary.nvim", "~/.local/share/nvim/site/pack/core/opt/tokyodark.nvim", "~/.local/share/bob/nightly/share/nvim/runtime", "~/.local/share/bob/nightly/share/nvim/runtime/pack/dist/opt/netrw", "~/.local/share/bob/nightly/share/nvim/runtime/pack/dist/opt/matchit", "~/.local/share/bob/nightly/lib/nvim", "~/.local/share/nvim/site/pack/core/opt/tokyodark.nvim/after", "/usr/share/vim/vimfiles"]
+}
