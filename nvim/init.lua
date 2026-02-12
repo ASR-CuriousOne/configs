@@ -51,11 +51,13 @@ vim.keymap.set('n', '<leader>fw', function()
 	builtin.grep_string({ search = vim.fn.input("Grep > ") })
 end)
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
+vim.keymap.set('n', '<leader>fa', builtin.find_files, {})
 
 vim.pack.add({{src = "https://github.com/nvim-treesitter/nvim-treesitter"}})
 require("nvim-treesitter").setup({
 	ensure_installed = {
-		"lua", "vim", "vimdoc", "cpp", "c", "python", "rust", "bash", "go", "glsl"
+		"lua", "vim", "vimdoc", "cpp", "c", "python", "rust", "bash", "go", "glsl",
+		"vhdl"
 	},
 	sync_install = true,
 	auto_install = true,
@@ -124,7 +126,8 @@ local lsp_servers = {
 	"ts_ls", "css_lsp", "html",
 	"javascript", "typescript",
 	"prisma-language-server",
-	"tinymist","rust_analyzer",
+	"tinymist","rust_analyzer","gopls",
+	"vhdl_ls"
 }
 for _, lsp in ipairs(lsp_servers) do
 	vim.lsp.enable(lsp)
